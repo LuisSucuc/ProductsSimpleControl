@@ -1,5 +1,6 @@
 #pragma once
 #include <stdlib.h>
+#include "login1.h"
 
 namespace ControlProductos {
 
@@ -22,6 +23,10 @@ namespace ControlProductos {
 		//CONSTRUCTOR: Contiene las variables o funciones a ejecutar al correr el programa
 		MyForm(void)
 		{
+			
+			login^ log = gcnew login();
+			log->ShowDialog();
+
 			InitializeComponent();
 			//Actualizar al compilar o correr el programa
 			actualizar();
@@ -313,6 +318,8 @@ namespace ControlProductos {
 		bindingSource1->DataSource = tabla;
 		//Asingamos a nuestra vista en MyForm.h para que muestre los datos y se le asigna la base de datos anterior
 		dataGridView1->DataSource = bindingSource1;
+
+
 
 	}
 
