@@ -1,5 +1,6 @@
 #pragma once
 #include <stdlib.h>
+#include <string> 
 #include "login1.h"
 
 namespace ControlProductos {
@@ -93,6 +94,8 @@ namespace ControlProductos {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
@@ -114,6 +117,8 @@ namespace ControlProductos {
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->textBox1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->textBox1->Location = System::Drawing::Point(80, 71);
 			this->textBox1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox1->Name = L"textBox1";
@@ -124,6 +129,8 @@ namespace ControlProductos {
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->textBox2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->textBox2->Location = System::Drawing::Point(312, 71);
 			this->textBox2->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox2->Name = L"textBox2";
@@ -134,6 +141,8 @@ namespace ControlProductos {
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->textBox3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->textBox3->Location = System::Drawing::Point(604, 71);
 			this->textBox3->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox3->Name = L"textBox3";
@@ -144,6 +153,8 @@ namespace ControlProductos {
 			// 
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->textBox4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->textBox4->Location = System::Drawing::Point(748, 71);
 			this->textBox4->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox4->Name = L"textBox4";
@@ -228,7 +239,25 @@ namespace ControlProductos {
 			// dataGridView1
 			// 
 			this->dataGridView1->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			dataGridViewCellStyle1->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle1->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			dataGridViewCellStyle1->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle1->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle1->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle2->BackColor = System::Drawing::SystemColors::Window;
+			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::ControlText;
+			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridView1->DefaultCellStyle = dataGridViewCellStyle2;
 			this->dataGridView1->Location = System::Drawing::Point(25, 116);
 			this->dataGridView1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->dataGridView1->Name = L"dataGridView1";
@@ -294,7 +323,7 @@ namespace ControlProductos {
 			this->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->MaximizeBox = false;
 			this->Name = L"MyForm";
-			this->Text = L"Super Mercado";
+			this->Text = L"Supermercado";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bindingSource1))->EndInit();
@@ -356,7 +385,7 @@ namespace ControlProductos {
 		return System::Convert::ToInt32(str);
 	}
 
-	int convertirDouble(String^ str) {
+	double convertirDouble(String^ str) {
 		//Sirve para convertir el string a tipo doble que es el tipo que pide la base de datos 
 		return System::Convert::ToDouble(str);
 	}
@@ -469,7 +498,7 @@ namespace ControlProductos {
 			coneccion->Close();
 
 			//Mensaje de éxito
-			MessageBox::Show("Producto modificado exitosamente");
+			MessageBox::Show("Producto modificado exitosamente" + "\nCodigo: " + codigo + "\nProducto: " + nombre + "\nExistencias: " + existencia + "\nPrecio: " + precio);
 
 			limpiar();
 			actualizar();

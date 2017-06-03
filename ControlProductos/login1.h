@@ -77,10 +77,11 @@ namespace ControlProductos {
 			// 
 			this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->button2->FlatAppearance->BorderSize = 0;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->button2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->button2->Location = System::Drawing::Point(170, 281);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(66, 29);
@@ -108,8 +109,10 @@ namespace ControlProductos {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->textBox1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->textBox1->Location = System::Drawing::Point(74, 45);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(214, 24);
@@ -119,8 +122,10 @@ namespace ControlProductos {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->textBox2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->textBox2->Location = System::Drawing::Point(74, 96);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(214, 24);
@@ -132,6 +137,8 @@ namespace ControlProductos {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->label1->Location = System::Drawing::Point(149, 22);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(60, 20);
@@ -145,6 +152,8 @@ namespace ControlProductos {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->label2->Location = System::Drawing::Point(142, 73);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(73, 20);
@@ -171,6 +180,8 @@ namespace ControlProductos {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Impact", 17.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(201)));
 			this->label3->Location = System::Drawing::Point(143, 9);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(121, 28);
@@ -251,7 +262,7 @@ namespace ControlProductos {
 			this->Hide();
 		}
 		else {
-			MessageBox::Show("Usuario inválido /n Intenta nuevamente");
+			MessageBox::Show("Usuario inválido \nIntenta nuevamente");
 			textBox1->Text = "";
 			textBox2->Text = "";
 		}

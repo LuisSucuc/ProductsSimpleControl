@@ -1,5 +1,2 @@
 ﻿  MyForm.cpp
-c:\users\luis sucuc\desktop\products mysql\controlproductos\MyForm.h(361): warning C4244: 'return': conversión de 'double' a 'int'; posible pérdida de datos
-  login1.cpp
-  Generando código...
   ControlProductos.vcxproj -> C:\Users\Luis Sucuc\Desktop\Products MySQL\Debug\ControlProductos.exe
