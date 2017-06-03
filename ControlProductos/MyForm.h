@@ -45,10 +45,10 @@ namespace ControlProductos {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::Label^  label3;
-	private: System::Windows::Forms::Label^  label4;
+
+
+
+
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::TextBox^  textBox2;
 	private: System::Windows::Forms::TextBox^  textBox3;
@@ -64,15 +64,15 @@ namespace ControlProductos {
 	private: System::Windows::Forms::DataGridView^  dataGridView1;
 	private: System::Windows::Forms::BindingSource^  bindingSource1;
 	private: System::Windows::Forms::Button^  button2;
-	private: System::Windows::Forms::PictureBox^  pictureBox1;
-	private: System::Windows::Forms::Label^  label5;
-	private: System::Windows::Forms::Label^  label6;
-	private: System::Windows::Forms::Label^  label7;
-	private: System::Windows::Forms::Label^  label8;
-	private: System::Windows::Forms::Label^  label9;
-	private: System::Windows::Forms::Label^  label10;
-	private: System::Windows::Forms::Label^  label11;
-	private: System::Windows::Forms::Label^  label12;
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::Button^  button1;
 
 
@@ -94,10 +94,6 @@ namespace ControlProductos {
 		{
 			this->components = (gcnew System::ComponentModel::Container());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
@@ -109,308 +105,179 @@ namespace ControlProductos {
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->bindingSource1 = (gcnew System::Windows::Forms::BindingSource(this->components));
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bindingSource1))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(26, 73);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(63, 20);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Código:";
-			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(155, 74);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(136, 20);
-			this->label2->TabIndex = 1;
-			this->label2->Text = L"Nombre producto:";
-			this->label2->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(710, 74);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(57, 20);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Precio:";
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(546, 74);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(93, 20);
-			this->label4->TabIndex = 3;
-			this->label4->Text = L"Existencias:";
-			this->label4->Click += gcnew System::EventHandler(this, &MyForm::label4_Click);
 			// 
 			// textBox1
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(89, 70);
+			this->textBox1->Location = System::Drawing::Point(80, 71);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(58, 26);
+			this->textBox1->Size = System::Drawing::Size(83, 26);
 			this->textBox1->TabIndex = 4;
 			// 
 			// textBox2
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(294, 71);
+			this->textBox2->Location = System::Drawing::Point(312, 71);
+			this->textBox2->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(246, 26);
+			this->textBox2->Size = System::Drawing::Size(201, 26);
 			this->textBox2->TabIndex = 5;
 			// 
 			// textBox3
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox3->Location = System::Drawing::Point(645, 71);
+			this->textBox3->Location = System::Drawing::Point(604, 71);
+			this->textBox3->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(58, 26);
+			this->textBox3->Size = System::Drawing::Size(84, 26);
 			this->textBox3->TabIndex = 6;
 			// 
 			// textBox4
 			// 
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox4->Location = System::Drawing::Point(773, 71);
+			this->textBox4->Location = System::Drawing::Point(748, 71);
+			this->textBox4->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(58, 26);
 			this->textBox4->TabIndex = 7;
 			// 
 			// Buscar
 			// 
-			this->Buscar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->Buscar->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(200)));
+			this->Buscar->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+			this->Buscar->FlatAppearance->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(171)), static_cast<System::Int32>(static_cast<System::Byte>(200)));
+			this->Buscar->FlatAppearance->BorderSize = 0;
+			this->Buscar->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Buscar->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Buscar->Location = System::Drawing::Point(664, 122);
+			this->Buscar->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->Buscar->Location = System::Drawing::Point(712, 118);
+			this->Buscar->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->Buscar->Name = L"Buscar";
-			this->Buscar->Size = System::Drawing::Size(167, 37);
+			this->Buscar->Size = System::Drawing::Size(132, 41);
 			this->Buscar->TabIndex = 8;
 			this->Buscar->Text = L"Buscar";
-			this->Buscar->UseVisualStyleBackColor = true;
+			this->Buscar->UseVisualStyleBackColor = false;
 			this->Buscar->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// Crear
 			// 
-			this->Crear->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->Crear->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(200)));
+			this->Crear->FlatAppearance->BorderSize = 0;
+			this->Crear->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->Crear->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Crear->Location = System::Drawing::Point(664, 169);
+			this->Crear->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->Crear->Location = System::Drawing::Point(712, 168);
+			this->Crear->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->Crear->Name = L"Crear";
-			this->Crear->Size = System::Drawing::Size(167, 37);
+			this->Crear->Size = System::Drawing::Size(132, 41);
 			this->Crear->TabIndex = 10;
 			this->Crear->Text = L"Crear";
-			this->Crear->UseVisualStyleBackColor = true;
+			this->Crear->UseVisualStyleBackColor = false;
 			this->Crear->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// button4
 			// 
-			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(200)));
+			this->button4->FlatAppearance->BorderSize = 0;
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button4->Location = System::Drawing::Point(664, 222);
+			this->button4->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->button4->Location = System::Drawing::Point(712, 218);
+			this->button4->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(167, 37);
+			this->button4->Size = System::Drawing::Size(132, 41);
 			this->button4->TabIndex = 11;
 			this->button4->Text = L"Modificar";
-			this->button4->UseVisualStyleBackColor = true;
+			this->button4->UseVisualStyleBackColor = false;
 			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
 			// button5
 			// 
-			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(200)));
+			this->button5->FlatAppearance->BorderSize = 0;
+			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button5->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button5->Location = System::Drawing::Point(664, 275);
+			this->button5->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->button5->Location = System::Drawing::Point(712, 268);
+			this->button5->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(167, 37);
+			this->button5->Size = System::Drawing::Size(132, 41);
 			this->button5->TabIndex = 12;
 			this->button5->Text = L"Eliminar";
-			this->button5->UseVisualStyleBackColor = true;
+			this->button5->UseVisualStyleBackColor = false;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(24, 122);
+			this->dataGridView1->Location = System::Drawing::Point(25, 116);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(615, 292);
+			this->dataGridView1->Size = System::Drawing::Size(632, 295);
 			this->dataGridView1->TabIndex = 13;
 			// 
 			// button2
 			// 
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(200)));
+			this->button2->FlatAppearance->BorderSize = 0;
+			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(664, 377);
+			this->button2->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->button2->Location = System::Drawing::Point(712, 368);
+			this->button2->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(167, 37);
+			this->button2->Size = System::Drawing::Size(132, 41);
 			this->button2->TabIndex = 14;
 			this->button2->Text = L"Salir";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(6, 502);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(74, 63);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 15;
-			this->pictureBox1->TabStop = false;
-			this->pictureBox1->Click += gcnew System::EventHandler(this, &MyForm::pictureBox1_Click);
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Book Antiqua", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(262, 9);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(438, 26);
-			this->label5->TabIndex = 16;
-			this->label5->Text = L"CONTROL PRODUCTOS SUPERMERCADO";
-			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->label5->Click += gcnew System::EventHandler(this, &MyForm::label5_Click);
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Book Antiqua", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(85, 505);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(412, 20);
-			this->label6->TabIndex = 19;
-			this->label6->Text = L"UNIVERSIDAD MARIANO GALVEZ DE GUATEMALA";
-			this->label6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Book Antiqua", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(86, 545);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(223, 20);
-			this->label7->TabIndex = 18;
-			this->label7->Text = L"FACULTAD DE INGENIERÍA";
-			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Book Antiqua", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(85, 525);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(387, 20);
-			this->label8->TabIndex = 17;
-			this->label8->Text = L"CENTRO UNIVERSITARIO DE CHIMALTENANGO";
-			this->label8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Font = (gcnew System::Drawing::Font(L"Book Antiqua", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label9->Location = System::Drawing::Point(707, 565);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(124, 18);
-			this->label9->TabIndex = 23;
-			this->label9->Text = L"José Luis Sucuc Otzoy";
-			this->label9->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label10
-			// 
-			this->label10->AutoSize = true;
-			this->label10->Font = (gcnew System::Drawing::Font(L"Book Antiqua", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label10->Location = System::Drawing::Point(659, 529);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(172, 18);
-			this->label10->TabIndex = 22;
-			this->label10->Text = L"Oscar Dany Josúe Sucuc Otzoy";
-			this->label10->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label11
-			// 
-			this->label11->AutoSize = true;
-			this->label11->Font = (gcnew System::Drawing::Font(L"Book Antiqua", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label11->Location = System::Drawing::Point(668, 547);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(163, 18);
-			this->label11->TabIndex = 21;
-			this->label11->Text = L"Juan Carlos Ovando Borrallo";
-			this->label11->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label12
-			// 
-			this->label12->AutoSize = true;
-			this->label12->Font = (gcnew System::Drawing::Font(L"Book Antiqua", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label12->Location = System::Drawing::Point(712, 509);
-			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(119, 20);
-			this->label12->TabIndex = 20;
-			this->label12->Text = L"INTEGRANTES:";
-			this->label12->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->label12->Click += gcnew System::EventHandler(this, &MyForm::label12_Click);
 			// 
 			// button1
 			// 
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
+				static_cast<System::Int32>(static_cast<System::Byte>(200)));
+			this->button1->FlatAppearance->BorderSize = 0;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Impact", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(664, 329);
+			this->button1->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->button1->Location = System::Drawing::Point(712, 318);
+			this->button1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(167, 37);
+			this->button1->Size = System::Drawing::Size(132, 41);
 			this->button1->TabIndex = 24;
 			this->button1->Text = L"Limpiar";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click_1);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(855, 591);
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->ClientSize = System::Drawing::Size(896, 518);
 			this->Controls->Add(this->button1);
-			this->Controls->Add(this->label9);
-			this->Controls->Add(this->label10);
-			this->Controls->Add(this->label11);
-			this->Controls->Add(this->label12);
-			this->Controls->Add(this->label6);
-			this->Controls->Add(this->label7);
-			this->Controls->Add(this->label8);
-			this->Controls->Add(this->label5);
-			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->button5);
@@ -421,16 +288,16 @@ namespace ControlProductos {
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->label4);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
-			this->Controls->Add(this->label1);
+			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
+			this->MaximizeBox = false;
 			this->Name = L"MyForm";
-			this->Text = L"Control Productos";
+			this->Text = L"Super Mercado";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bindingSource1))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
